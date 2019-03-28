@@ -27,6 +27,8 @@ COPY	IPAfont00303.zip /data/IPAfont00303.zip
 RUN	unzip IPAfont00303.zip -d /usr/share/fonts/ && \
 	fc-cache -fv
 
+RUN 	useradd jenkins
+USER	jenkins
 
 
 
