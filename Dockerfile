@@ -16,7 +16,7 @@ RUN     apt-get update && \
 RUN     pip3 install pymongo urllib3 requests scrapy mpegdash m3u8 fake-useragent twython mojimoji pillow slackweb lxml slack_log_handler && \
 	pip3 install git+https://github.com/yashaka/selene.git
 
-RUN	wget https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_linux64.zip && \
+RUN	wget https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_linux64.zip && \
 	unzip chromedriver_linux64.zip -d /usr/bin/
 
 WORKDIR /data
