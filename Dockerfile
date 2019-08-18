@@ -14,7 +14,7 @@ RUN curl -SLO https://dl.google.com/linux/direct/google-chrome-stable_current_am
   	&& rm google-chrome-stable_current_amd64.deb
 
 RUN     apt-get update && \
-        apt-get install -y --no-install-recommends wget curl unzip fontconfig xvfb libgconf2-4 imagemagick ffmpeg
+        apt-get install -y --no-install-recommends wget curl unzip fontconfig xvfb imagemagick ffmpeg
 
 RUN     apt-get update && \
         apt-get install -y --no-install-recommends python3-dev python3-pip python-twisted libxml2-dev python-lxml python-requests nodejs && \
